@@ -1,0 +1,91 @@
+.todo-container {
+  position: relative;
+  justify-content: center;
+  padding: 10px;
+  width: 40%;
+  margin: auto;
+  height: 530px;
+  border-radius: 12px;
+  background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.todo-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.todo-input {
+  width: 60%;
+  height: 3vh;
+  border: none;
+  border-bottom: 1.5px solid #393e46;
+  background-color: transparent;
+  border-radius: 1px;
+  padding-left: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus {
+  border: none;
+  border-bottom: 1.5px solid #4f81c7;
+}
+
+input::placeholder {
+  padding: 10px 0px 10px 5px;
+  color: #9ba6a5;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input[type="text"]:focus {
+  outline: none !important;
+}
+
+.btn-add {
+  height: 30px;
+  width: 30px;
+  color: #6bba62;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.btn-prev {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  height: 35px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.btn-next {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  height: 35px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.btn-sort {
+  height: 30px;
+  width: 30px;
+  color: #393e46;
+  cursor: pointer;
+}
+
+.btn-prev:hover {
+  color: #4f81c7;
+  transition: 0.25s ease-in-out;
+  transform: scale(1.5);
+}
+.btn-next:hover {
+  color: #4f81c7;
+  transition: 0.25s ease-in-out;
+  transform: scale(1.5);
+}
